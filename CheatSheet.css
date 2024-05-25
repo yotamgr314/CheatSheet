@@ -108,3 +108,45 @@ margin:10px; /* adds a 10px gap between any elements on the screen and the box f
 /* Making an object take the whole width of the screen */
 width: 10%;
 
+/* ORDER OF STYLING HIERARCHY, 1 IS THE MOST IMPORTANT, THEN 2... etc..*/
+/* given the line of code below */
+/**********************************************************/
+<li id="first-id" class="first-class" draggable>First </li>
+/**********************************************************/
+1) #first-id {color:orange;} /* THE MOST IMPORTANT */
+2) li[draggable] {color: blue;} /* 2AND MOST IMPORTANT */
+3) .first-class {color:red;} /* 3RD MOST IMPORTANT */
+4) li{color:green}  /* 4TH MOST IMPORTANT */
+
+
+
+/* SELECTORS */
+/* APLLYING THE SAME CSS DESIGN TO MULTIPLE HTML TAGS */
+h1,h2,#logo,.menu
+{
+  color: blue
+}
+
+
+/* DIRECT CHILD SELECTOR */
+/* EXAMPLE */
+ul > li
+{
+  color: blue; /* will change the color of the li to blue. */
+}
+parentTag > childOfParentTag
+{
+  color: blue; /* will change the color of li to blue. */
+}
+
+/* CHAINING MULTIPLE CONSTRAINT SELECTOR */
+<h1 class="className" id="idName">Hello World</h1>
+h1.className#idName
+{
+  color: blue; /* will change the color of the h1 to blue. */
+}
+/* html code example */
+
+
+/* POSITIONING */
+
