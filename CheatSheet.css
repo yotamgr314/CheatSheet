@@ -77,3 +77,34 @@ https://fonts.google.com/
     i) THEN I NEED TO HOVER OVER THE ELEMENT I WANT TO INSPECT AND CLICK ON IT.
     ii) IT WILL HIGHLIGHT THE ELEMENT I CLICKED ON IN THE INSPECT MODE.
 */
+
+/* INSPECT MODE USAGE INSTRUCTIONS */
+/* 
+1) ANY CHANGES MADE IN THE CHROME INSPECT MODE WILL NOT IMPACT THE VS CODE. 
+*/
+
+
+/* THE BOX MODEL */
+/* 1) each element is a box. */
+/* 2) the box model is a box that wraps around every html element. */
+
+/* CHANGING THE BORDER STYLE */
+border: para1_thicknessOfBorder_10px para2_styleOfBorder_solid/dashedline para3_color;
+border-top: 0px /* the top of the box will have no border.*/
+border-width: para1_px para2_px para3_px para4_px; /* setting the border width for each side of the box clock wide, para1 is 12:00 */
+border-width: para1_0px para2_20px; /* setting the border width for each side of the box clock wide, this syntax will set top and bottom to 0px, and left and right to 20px  */
+
+
+/* PADDING */
+padding:20px; /* pushes the border out of the box by 20px on all sides, the elements height and width inside the box will not change. */
+
+/* MARGIN */
+margin:10px; /* adds a 10px gap between any elements on the screen and the box from all directions, the elements height and width inside the box will not change. */
+
+
+
+
+
+/* Making an object take the whole width of the screen */
+width: 10%;
+
