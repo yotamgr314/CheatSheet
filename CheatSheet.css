@@ -48,4 +48,21 @@ element_Tag, element_Tag
 }
 
 
-/* CSS FONTS */
+/* CSS TEXT FONTS */
+
+element_tag
+{
+  font-size: 20px; /* SETS THE TEXT FONT SIZE TO 20PX */
+  font-family: Arial, sans-serif; /* SETS THE TEXT FONT FAMILY TO ARIAL,THE FIRST IS THE ONE I WANT, THE SECOND PARAMTER IS A GENERIC ONE INCASE THE PRIMARY ONE IS NOT SUPPORTED ON THE DISPLAYING PC. */
+  font-weight: bold / noram / RELATIVE TO A PARENT / NUMBER (100-900);/* SETS THE TEXT FONT TO BOLD OR NORAML/RELATIVE / NUM RANGE.*/
+  text-align: center / left / right / justify; /* SETS THE TEXT ALIGNMENT TO CENTER / LEFT / RIGHT / 
+}
+
+
+/* LINK TO GOOGLE FONTS */
+https://fonts.google.com/
+
+/*  
+1) PRESS THE SELECT BUTTON ON THE FONT YOU WANT
+2) PRESS THE GET EMBED CODE BUTTON
+3) COPY THE CODE TO THE HTML HEAD TAG.(יש הסבר במצגת עזר עצמית במודל)
