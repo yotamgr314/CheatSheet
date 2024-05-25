@@ -1,0 +1,51 @@
+/* CSS FORMATS */
+
+element_Tag 
+{
+  color: gray;
+}
+
+/* CSS ID */
+#id_Tag 
+{
+  color: gray;
+}
+
+/* CSS CLASS */
+.class_Tag 
+{
+  color: gray;
+}
+
+/* CSS ATTRIBUTE */
+[attribute_Tag] 
+{
+  color: gray;
+}
+
+/* CSS Pseudo-Classes */ /* ASK GPT */
+element_Tag:pseudo-class 
+{
+  color: gray;
+}
+
+/* CSS Pseudo-Elements */ /* ASK GPT */
+element_Tag::pseudo-element 
+{
+  color: gray;
+}
+
+/* CSS Combinators */ /* ASK GPT */
+element_Tag element_Tag 
+{
+  color: gray;
+}
+
+/* CSS Grouping */ /* ASK GPT */
+element_Tag, element_Tag 
+{
+  color: gray;
+}
+
+
+/* CSS FONTS */
