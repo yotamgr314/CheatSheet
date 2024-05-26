@@ -181,3 +181,39 @@ position: fixed; /* DOSENT MATTER IF WE SCROLL OR NOT IT WILL STICK TO ITS POSIT
 
 /* CREATING A CIRCLE */
 border-radius: 50%; /* MAKES THE ELEMENT A CIRCLE */
+
+
+/* SPAN  */
+<p>hello<span>beatuiful</span>world</p>
+
+
+/* DISPLAY:BLOCK / INLINE / INLINE BLOCK*/
+
+/* DISPLAY:BLOCK */
+/*
+1) allows to set height and width.
+2) aligns elements in a row.
+3) and if we have another element it will start from a new line.
+*/
+
+/* DISPLAY INLINE */
+/* IT WILL TAKE ONLY THE WIDTH OF THE TEXT ITSELF AND WILL NOT TAKE THE ENTIRE WIDTH OF THE SCREEN */
+/* can't set the size of the width and the height, it is auto sized itself based on the text length. */
+
+/* DISPLAY NONE */
+/* MAKES ANY ELEMENT ON THE SCREEN DISSAPPEAR
+   USED FOR EXAMPLE TO MAKE A DROPDOWN MENU DISAPPEAR WHEN THE USER CLICKS ON IT. */
+
+/* DISPLAY INLINE BLOCK 
+1) allows to set height and width.
+2) aligns elements in a row.
+3) if the width of the screen is over it will enter a new line.
+*/
+
+/* FLOAT:RIGHT  */
+/*setting the image to float:right / left / MAKE THE TEXT WRAP AROUND THE IMAGE, ITS ACTULLY WORKS ON THE TEXT AND NOT THE IMAGE IT SELF.
+ will make the text wrap around the image from the left side or the right side.
+ 1) to make sure other text in our page will not be affected by the image we need to set clear:left/right/both; to the text we want to be below the image and not float around it. */
+ 
+
+ /* RESPONSIVE TO DIFFERENT SCREENSIZE */
