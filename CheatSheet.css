@@ -187,7 +187,7 @@ border-radius: 50%; /* MAKES THE ELEMENT A CIRCLE */
 <p>hello<span>beatuiful</span>world</p>
 
 
-/* DISPLAY:BLOCK / INLINE / INLINE BLOCK*/
+/* DISPLAY:BLOCK / INLINE / INLINE BLOCK / GRID / FLEX */
 
 /* DISPLAY:BLOCK */
 /*
@@ -210,10 +210,100 @@ border-radius: 50%; /* MAKES THE ELEMENT A CIRCLE */
 3) if the width of the screen is over it will enter a new line.
 */
 
+/* DISPLAY GRID  */
+DISPLAY: GRID /* allows to use the system of css for the layout, good for 2 dimennsions layout, aka the entire web layout, rowns and columns */
+<div class = "grid-container">
+<div class = "first card"></div>
+  <div class = "card">1</div>
+  <div class = "card">2</div>
+  <div class = "card">3</div>
+  <div class = "card">4</div>
+</div>
+
+.grid-container
+{
+  display: grid; /* allows to use the system of css for the layout */
+  grid-template-columns: 1fr 1fr /* 2 colums, both the same size, devids the screen into 2 columns*/
+  grid-template-rows: 100px 200x 200x; /* first row is 100px height, second row 200px and third row 200px */
+  grid-gap: 10px; /* 10px gap between each row and column */
+}
+
+.first card
+{
+  grid-column:span 2; /* will make the first card to be at width of 2 columns */
+}
+
+/* FLEX BOX SYSTEM OF CSS */
+/* 
+1) allows me to set the layout of the page in a one dimentional way, aka row or column using the css layout system.
+   ****good for navbars, footers, headers, etc****...
+*/
+
+<div class = "flex-container">
+  <div class = "first card"></div>
+  <div class = "second card"></div>
+  <div class = "card"></div>
+  <div class = "card"></div>
+</div>
+
+
+.flex-container {
+  display:flex  /* allows me to set the layout of the page in a one dimentional way, aka row or column using the css layout system.(its a row by default), the width on each element inside the flexbox gonna be in the size of its content, any other element will be on a new line. */
+  flex-direction: column; /* will make the elements in the flex container to be in a column */
+  gap: 10px; /* 10px gap between each element in the flex container */
+}
+.card {
+  background-color: lightblue;
+  border: 30px solid white;
+  height: 100px;
+  flex:1;
+}
+
+.first {
+  flex:2;
+}
+
+.second {
+  flex: 0.5;
+}
+
+/* DISPLAY: INLINE-FLEX */
+/* SAME AS FLEX BUT THE ELEMENTS WILL BE INLINE, AKA OTHER ELEMENTS CAN BE ADDED AND SHARE THE SAME LINE*/
+
+
+
+
+
+
 /* FLOAT:RIGHT  */
 /*setting the image to float:right / left / MAKE THE TEXT WRAP AROUND THE IMAGE, ITS ACTULLY WORKS ON THE TEXT AND NOT THE IMAGE IT SELF.
  will make the text wrap around the image from the left side or the right side.
  1) to make sure other text in our page will not be affected by the image we need to set clear:left/right/both; to the text we want to be below the image and not float around it. */
  
 
- /* RESPONSIVE TO DIFFERENT SCREENSIZE */
+ /* RESPONSIVE TO DIFFERENT SCREENSIZE 
+ can be achived by using one of the following: 
+ 1) media queries
+ 2) css grid
+ 3) css flexbox
+ 4) external frameworks e.g. Bootstrap.
+ 
+
+/* MEDIA QUERIES */
+@media(max-width:600px)
+{
+  /* css for screens below or equal to 600px wide
+  1) any screen below 600px will have the css properties below.
+  2) SIZED: 
+      i) mobile devices: 319px - 480px
+      ii) tablets and ipads : 481px - 1200px
+      iii) laptops: 1201px - 1600px
+      iiii) desktops: 1601px and more..
+  */
+}
+
+ 
+ 
+ 
+ 
+ 
