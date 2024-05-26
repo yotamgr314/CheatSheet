@@ -233,6 +233,8 @@ DISPLAY: GRID /* allows to use the system of css for the layout, good for 2 dime
   grid-column:span 2; /* will make the first card to be at width of 2 columns */
 }
 
+/************************************************************************************** FLEX BOX *****************************************************************************************/
+
 /* FLEX BOX SYSTEM OF CSS */
 /* 
 1) allows me to set the layout of the page in a one dimentional way, aka row or column using the css layout system.
@@ -270,9 +272,15 @@ DISPLAY: GRID /* allows to use the system of css for the layout, good for 2 dime
 /* DISPLAY: INLINE-FLEX */
 /* SAME AS FLEX BUT THE ELEMENTS WILL BE INLINE, AKA OTHER ELEMENTS CAN BE ADDED AND SHARE THE SAME LINE*/
 
-
-
-
+/* ORDER
+1) i can set an order property on a flex item to change the order of the items in the flex container.
+*/
+ /* FLEX-WRAP
+ 1) i can set the flex-wrap property on a flex container to control the wrapping of flex items, when i run out of space on the horizontal or vertical axis it wont go onto the next line.
+ */
+/* FLEX- NOWRAP
+   1) i can set the flex-wrap property on a flex container to control the wrapping of flex items, when i run out of space on the horizontal or vertical axis it will go onto the next line.
+ */
 
 
 /* FLOAT:RIGHT  */
