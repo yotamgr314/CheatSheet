@@ -310,25 +310,8 @@ DISPLAY: GRID /* allows to use the system of css for the layout, good for 2 dime
   */
 }
 
- /* JAVA SCRIPT TO DO LIST*/
- 
- /* 1) TO SUM UP HOISTING */
- /* 2) TO SUM FOR FOR(OF) */
- /* 3) TO SUME DOLLAR SYNTAX */
- /* 4) WE WILL RARELY USE SYMBOL
-    5) TO CONNECT STRING WE WILL USE THE ` ${} SYNTAX NOTATION, NOT THE + OPERATOR.
-*/
  
 
-/************************************************JAVA SCRIPT***********************************/
-/* CLASS EXIST IN JS
- */
- const person = {
-  firstname: "john",
-  lastName: "Doe",
-  age: 50
-} 
 
-/* The documen file - describes the html file, hence includes the properties of the html file such as bg color etc.. */
 
 
