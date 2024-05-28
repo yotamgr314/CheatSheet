@@ -83,18 +83,41 @@ b = 5;
 console.log("a+b = ", a +b); 
 } )();
 
-console.log("a = ", a); 
+console.log("a = ", a); /* a and b Declared outside of any function or block --> hence we can access them and modify them within any function in our code our function is an IIFE, which means it is invoked immediately after it is defined.*/
 console.log("b = ", b); 
 
 
-/* a and b Declared outside of any function or block --> hence we can access them and modify them within any function in our code.
-our function is an IIFE, which means it is invoked immediately after it is defined.
-*/
+/* DESTRUCTORS */
+/* The destructuring syntax for arrays allows you to assign values from the array to variables easily:*/
+const array = [1, 2, 3, 4];
 
+// Destructuring
+const [first, second, third] = array;
+
+console.log(first); // 1
+console.log(second); // 2
+console.log(third); // 3
+
+/* Destructuring Objects
+The destructuring syntax for objects allows you to assign values from an object to variables with the same key names:*/
+const person = {
+   name: 'John',
+   age: 30,
+   city: 'New York'
+ };
+ 
+ // Destructuring
+ const { name, age, city } = person;
+ 
+ console.log(name); // John
+ console.log(age); // 30
+ console.log(city); // New York
+ 
 
 
 
 /* THIS  */
+
 /* refers to the object that is currently executing the code. The value of this varies depending on the context in which it is used:*/
 
 /* 1) Global Context: In the global context (outside of any function or object), this refers to the global object. In a browser, this is window. */
@@ -118,7 +141,7 @@ function show() {
 };
 obj.show(); // this refers to obj
 
-/* 3) Arrow Functions: Used in anonymous functions only!!.
+/* 3) ARROW FUNCTION - USED IN ANNONYMOUS FUNCTIONS ONLY!
 ● Important! Unlike a regular function, an arrow function does not have its own internal scope ---> This means inner this = outer this.
 ● If the function receives one parameter, you can omit the parentheses. In all other cases, parentheses are required.
 ● If the function has one statement, you can omit the curly braces. In all other cases, curly braces are required.
