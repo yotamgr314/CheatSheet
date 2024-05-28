@@ -350,4 +350,60 @@ document.getElementById("myButton").onclick = showAlert; /* on click is a dom me
 
 
 
+/*----------------------------------------------------JAVA TRIGGERS AND EVENTS EXAMPLES----------------------------------------------------------------------------------------------------------- */
 
+/* hides and shows the text upon clicking a button */
+document.getElementById("show-hide-button").onclick = function() {
+   if(document.getElementById("p1").style.visibility =="hidden")
+       {
+           document.getElementById("p1").style.visibility ="visible";
+       }else {
+           document.getElementById("p1").style.visibility ="hidden";
+       }
+}
+
+
+
+/* changes the background color upon hovering an element */
+document.getElementById("Khaki-cell").onmouseover = function() {
+
+   document.body.style.backgroundColor = this.style.backgroundColor;
+}
+
+document.getElementById("green-cell").onmouseover = function() {
+
+   document.body.style.backgroundColor = this.style.backgroundColor;
+}
+
+document.getElementById("silver-cell").onmouseover = function() {
+
+   document.body.style.backgroundColor = this.style.backgroundColor;
+}
+
+/* returns the amount of images in my html tag */
+var imageNum = document.getElementsByTagName("img").length;
+document.getElementById("answer").innerHTML = imageNum;
+
+/* changes a in my web by clicking on a button */
+document.getElementById("button").onclick = function () {
+   document.getElementById("myImg").src = "images/cover2.jpg";
+}
+
+/* enlargest the text by clicking on a + button, and reduces the text size by clicking on a - button */
+document.getElementById("plus-button").onclick = function () {
+   var fontSize = parseInt(document.getElementById("p1").style.fontSize);
+   document.getElementById("p1").style.fontSize = fontsize +1 + "px";
+}
+
+/* inserting elements of an array into a list in the html file */
+
+var fruits = ["banana","orange","apple", "mango"];
+var arrayLength = fruits.length;
+var list = "";
+
+for(i = 0; i<arrayLenght; i++)
+   {
+       list+= "<li>" + fruits[i] + "</li>"
+   }
+
+   document.getElementById("fruits-list").innerHTML = list;
